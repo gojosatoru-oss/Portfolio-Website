@@ -1,0 +1,286 @@
+
+/* PROJECTS SECTION */
+
+.projects {
+    padding: 100px 8%;
+}
+
+/* SECTION HEADING */
+
+.projects-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.projects-heading h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    margin-top: 15px;
+}
+
+.projects-heading h2 span {
+    color: var(--accent-color);
+}
+
+.section-label {
+    color: var(--accent-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.projects-intro {
+    max-width: 380px;
+    color: var(--muted-color);
+    font-size: 0.95rem;
+}
+
+/* PROJECT LIST */
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* FEATURED PROJECT */
+
+.project-featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+
+    padding: 55px;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+
+    transition: border-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.project-featured:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project-number {
+    color: var(--accent-color);
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.project-info h3 {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    line-height: 1.15;
+    margin: 22px 0;
+}
+
+.project-info p {
+    color: var(--muted-color);
+    max-width: 480px;
+    margin-bottom: 28px;
+}
+
+/* PROJECT TAGS */
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-tags span {
+    padding: 7px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+
+    color: var(--muted-color);
+    font-size: 0.8rem;
+}
+
+/* SMART HOME VISUAL */
+
+.project-visual {
+    min-height: 340px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.visual-top,
+.visual-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    color: var(--muted-color);
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.live-indicator {
+    color: var(--accent-color);
+}
+
+.house-display {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.house-room {
+    display: grid;
+    grid-template-columns: 35px 1fr auto;
+    align-items: center;
+    gap: 12px;
+
+    padding: 16px;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    font-size: 0.9rem;
+}
+
+.room-icon {
+    color: var(--accent-color);
+    font-size: 1.3rem;
+}
+
+.device-status {
+    color: var(--muted-color);
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* SECOND PROJECT */
+
+.project-secondary {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    align-items: center;
+    gap: 30px;
+
+    padding: 35px 45px;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+
+    transition: border-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.project-secondary:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-4px);
+}
+
+.secondary-number {
+    color: var(--accent-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.secondary-info h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.secondary-info p:not(.project-number) {
+    max-width: 600px;
+    color: var(--muted-color);
+    margin-bottom: 20px;
+}
+
+.secondary-arrow {
+    color: var(--accent-color);
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.project-secondary:hover .secondary-arrow {
+    transform: translate(5px, -5px);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+    .project-featured {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 35px;
+    }
+
+    .projects-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects {
+        padding: 70px 6%;
+    }
+
+    .project-featured {
+        padding: 25px;
+    }
+
+    .project-visual {
+        min-height: 300px;
+        padding: 18px;
+    }
+
+    .house-room {
+        grid-template-columns: 25px 1fr;
+    }
+
+    .device-status {
+        grid-column: 2;
+    }
+
+    .project-secondary {
+        grid-template-columns: 1fr auto;
+        gap: 15px;
+        padding: 25px;
+
+        
+    }
+
+    .secondary-number {
+        font-size: 1.5rem;
+    }
+
+    .secondary-info {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .secondary-arrow {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
