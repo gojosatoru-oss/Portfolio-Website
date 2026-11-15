@@ -23,6 +23,374 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Cyrus Judiel's personal portfolio — Computer Engineering student, programmer, and aspiring engineer.">
+
+    <title>Cysiway | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="academics.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="navbar.css">
+    
+    
+
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header class="navbar">
+    <a href="#home" class="logo">cysiway<span>.</span></a>
+      
+    <button class="menu-toggle" id="menu-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false">
+        ☰
+    </button>
+    <nav class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Expertise</a>
+        <a href="#projects">Selected Work</a>
+        <a href="#academics">Education</a>
+    </nav>
+
+    <a href="#contact" class="nav-contact">
+        Let's Talk <span>↗</span>
+    </a>
+</header>
+<main>
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="eyebrow">
+                <span class="status-dot"></span>
+                COMPUTER ENGINEERING STUDENT
+            </p>
+
+            <h1 id= "hero-title">
+                Turning ideas<br>
+                into <span>possibilities.</span>
+            </h1>
+            
+
+            <p class="hero-description">
+                I'm Cyrus — an aspiring engineer exploring software,
+                technology, and the systems that connect our world.
+                Always learning. Always building.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">
+                    Explore my work <span>↗</span>
+                </a>
+
+                <a href="#about" class="text-link">
+                    More about me <span>↓</span>
+                </a>
+            </div>
+        </div>
+        
+
+
+        <div class="hero-visual">
+            <div class="hero-image">
+                <img src="me.jpg" alt="Portrait of Cyrus">
+            </div>
+
+            <div class="image-label">
+                <span>01 / INTRODUCTION</span>
+                <span>PHILIPPINES</span>
+            </div>
+        </div>
+
+        <div class="hero-bottom">
+            <span>DESIGNING · DEVELOPING · LEARNING</span>
+            <span>SCROLL TO EXPLORE ↓</span>
+        </div>
+
+
+    </section>
+
+<section class="projects" id="projects">
+
+    <div class="projects-heading">
+        <div>
+            <p class="section-label">02 / SELECTED WORK</p>
+            <h2>Things I've <span>built.</span></h2>
+        </div>
+
+        <p class="projects-intro">
+            A collection of projects, experiments, and things
+            I've developed while learning and exploring technology.
+        </p>
+    </div>
+
+    <div class="projects-list">
+
+   
+        <article class="project-featured">
+
+            <div class="project-info">
+                <span class="project-number">01 — FEATURED PROJECT</span>
+
+                <h3>Smart Home<br>Electrical Simulation</h3>
+
+                <p>
+                    A group project Java-based simulation of a smart home electrical
+                    system, applying object-oriented programming to
+                    organize and manage devices across different locations.
+                </p>
+
+                <div class="project-tags">
+                    <span>Java</span>
+                    <span>OOP</span>
+                    <span>Simulation</span>
+                </div>
+
+                
+            </div>
+
+            <div class="project-visual smart-home-visual">
+                <div class="visual-top">
+                    <span>SMART HOME SYSTEM</span>
+                    <span class="live-indicator">● SYSTEM MODEL</span>
+                </div>
+
+                <div class="house-display">
+                    <div class="house-room">
+                        <span class="room-icon">⌂</span>
+                        <span>Living Room</span>
+                        <span class="device-status">LIGHT ON</span>
+                    </div>
+
+                    <div class="house-room">
+                        <span class="room-icon">▤</span>
+                        <span>Bedroom</span>
+                        <span class="device-status">STANDBY</span>
+                    </div>
+
+                    <div class="house-room">
+                        <span class="room-icon">⌑</span>
+                        <span>Kitchen</span>
+                        <span class="device-status">STANDBY</span>
+                    </div>
+                </div>
+
+                <div class="visual-bottom">
+                    <span>DEVICE MANAGEMENT</span>
+                    <span>JAVA / OOP</span>
+                </div>
+            </div>
+
+        </article>
+
+   
+        <article class="project-secondary">
+
+            <div class="secondary-number">02</div>
+
+            <div class="secondary-info">
+                <p class="project-number">PERSONAL PROJECT</p>
+                <h3>Cysiway Portfolio</h3>
+
+                <p>
+                    My personal portfolio website, built to showcase
+                    my projects, skills, academic background, and
+                    development as an aspiring engineer.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Web Design</span>
+                </div>
+            </div>
+
+            <div class="secondary-arrow">↗</div>
+
+        </article>
+
+    </div>
+    </section>
+
+<section class="skills" id="skills">
+
+    <div class="skills-heading">
+        <p class="section-label">03 / MY EXPERTISE</p>
+        <h2>Tools of my <span>trade.</span></h2>
+        <p class="skills-intro">
+            Technologies, technical foundations, and abilities
+            I'm developing throughout my engineering journey.
+        </p>
+    </div>
+
+    <div class="expertise-grid">
+
+        <article class="expertise-card">
+            <span class="expertise-number">01</span>
+            <h3>Programming Languages</h3>
+            <p>Languages I've been learning and practicing.</p>
+
+            <div class="expertise-tags">
+                <span>C</span>
+                <span>Java</span>
+                <span>Python</span>
+            </div>
+        </article>
+
+        <article class="expertise-card">
+            <span class="expertise-number">02</span>
+            <h3>Web Development</h3>
+            <p>Foundational tools for building websites.</p>
+
+            <div class="expertise-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+        </article>
+
+        <article class="expertise-card">
+            <span class="expertise-number">03</span>
+            <h3>Technical Foundations</h3>
+            <p>Concepts and tools explored through coursework and projects.</p>
+
+            <div class="expertise-tags">
+                <span>OOP</span>
+                <span>Arduino Simulation</span>
+                <span>Basic Electronics</span>
+            </div>
+        </article>
+
+        <article class="expertise-card">
+            <span class="expertise-number">04</span>
+            <h3>Professional Abilities</h3>
+            <p>Skills that support collaboration and continuous learning.</p>
+
+            <div class="expertise-tags">
+                <span>Communication</span>
+                <span>Leadership</span>
+                <span>AI Literacy</span>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+<section class="academics" id="academics">
+    <div class="academics-heading">
+        <p class="section-label">04 / EDUCATION</p>
+        <h2>The journey <span>so far.</span></h2>
+        <p class="academics-intro">
+            My academic background and milestones that have shaped my journey in engineering.
+        </p>
+    </div>
+
+    <div class="academics-list">
+
+        <article class="academic-item">
+            <div class="academic-year">2025 — PRESENT</div>
+            <div class="academic-content">
+                <span class="academic-type">UNDERGRADUATE</span>
+                <h3>Computer Engineering</h3>
+                <p>Second-Year College Student</p>
+                <span class="academic-institution">Pampanga State Agricultural University</span>
+            </div>
+            <span class="academic-number">01</span>
+        </article>
+
+        <article class="academic-item">
+            <div class="academic-year">2025</div>
+            <div class="academic-content">
+                <span class="academic-type">SCHOLARSHIP</span>
+                <h3>DOST-SEI Scholar</h3>
+                <p>2025 DOST Scholarship Qualifier</p>
+                <span class="academic-institution">Department of Science and Technology</span>
+            </div>
+            <span class="academic-number">02</span>
+        </article>
+
+        <article class="academic-item">
+            <div class="academic-year">COMPLETED</div>
+            <div class="academic-content">
+                <span class="academic-type">SENIOR HIGH SCHOOL</span>
+                <h3>Senior High School Graduate</h3>
+                <p>Graduated With High Honors</p>
+            </div>
+            <span class="academic-number">03</span>
+        </article>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="contact-content">
+        <p class="section-label">05 / GET IN TOUCH</p>
+
+        <h2>Have something<br>in <span>mind?</span></h2>
+
+        <p class="contact-description">
+            Whether it's an opportunity, a project, or simply a conversation,
+            I'd be glad to hear from you.
+        </p>
+
+        <a href="mailto:cysiwayy@gmail.com" class="contact-link">
+            Let's talk <span>↗</span>
+        </a>
+
+        <p class="contact-email">cysiwayy@gmail.com</p>
+    </div>
+</section>
+
+
+<section class="about" id="about">
+    <div class = "about-contents">
+        <p class = "name">Full Name: Cyrus Judiel G. Nunal</p>
+        <p class = "Age">Age: 19</p>
+        <p class = "links">Links: </p>
+      
+        <a href="mailto:cysiwayy@gmail.com" class="about-link">
+    cysiwayy@gmail.com
+</a>
+
+<a href="https://www.facebook.com/cyrus.judiel"
+   class="about-link"
+   target="_blank"
+   rel="noopener noreferrer">
+    Facebook Account
+</a>
+
+      
+
+
+
+
+
+    </div>
+
+
+</section>
+
+
+</main>
+<footer class="site-footer">
+    <a href="#home" class="logo">cysiway<span>.</span></a>
+    <p>Designed and built by me. © 2026</p>
+    <a href="#home" class="back-to-top">Back to top ↑</a>
+</footer>
+<button id="back-to-top" aria-label="Back to top">
+    ↑
+</button>
+</body>
+</html>
 <header class="navbar">
     <a href="#home" class="logo">cysiway<span>.</span></a>
       
