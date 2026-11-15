@@ -1,0 +1,124 @@
+
+/* NAVIGATION */
+
+.navbar {
+    position: relative;
+    min-height: 78px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    background: rgba(11, 17, 32, 0.92);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+    z-index: 1000;
+}
+
+.logo {
+    color: var(--text-color);
+    font-size: 1.45rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--muted-color);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: var(--accent-color);
+}
+
+/* HAMBURGER BUTTON */
+
+.menu-toggle {
+    display: none;
+    color: var(--text-color);
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1.6rem;
+    line-height: 1;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 760px) {
+    .navbar {
+        min-height: 70px;
+        padding: 0 6%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        padding: 10px 6% 18px;
+        background: var(--bg-color);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 14px 0;
+    }
+
+   
+}
+/* NAVBAR CONTACT BUTTON */
+.nav-contact {
+    display: inline-block;
+    padding: 11px 22px;
+    color: var(--bg-color);
+    background: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.25s ease,
+                color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.nav-contact:hover {
+    color: var(--accent-color);
+    background: transparent;
+    transform: translateY(-2px);
+}
