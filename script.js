@@ -1,4 +1,6 @@
 const floatingBackToTop = document.querySelector("#back-to-top");
+const menuToggle = document.querySelector("#menu-toggle") 
+const navi = document.querySelector(".nav-links" )
 
 if (floatingBackToTop) {
     function updateBackToTop() {
@@ -18,4 +20,38 @@ if (floatingBackToTop) {
             behavior: "smooth"
         });
     });
+}
+
+
+if (menuToggle && navi ){
+menuToggle.addEventListener("click", () => 
+{
+const isOpen = 
+navi.classList.toggle("open");
+
+menuToggle.setAttribute("aria-expanded", isOpen );
+
+});
+
+
+
+
+
+
+navi.querySelectorAll("a" ).forEach((links)=>{
+      links.addEventListener("click", ()=>{
+
+      navi.classList.remove("open");
+
+menuToggle.setAttribute("aria-expanded", "false"  );
+
+
+
+
+
+
+
+} );
+});
+
 }
